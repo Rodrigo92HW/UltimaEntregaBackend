@@ -1,0 +1,69 @@
+<div class="bg-dark-subtle">
+    <h1 class="text-center p-4 text-white bg-dark shadow-lg mb-0">E-Commerce</h1>
+    <header id="header">
+    </header>
+
+    <div class="container bg-success-subtle m-3 mx-auto shadow-lg pt-2 pb-1" id="createProduct">
+        <h3 class="text-center p-3">Crear Producto</h3>
+        <form id="productForm" class="mb-5">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>Nombre</h5>
+                    <input required type="text" class="form-control" id="title" placeholder="Nombre"
+                        aria-label="Ingrese el Nombre del Producto" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-md-4">
+                    <h5>Descripción</h5>
+                    <input required type="text" class="form-control" id="description"
+                        placeholder="Descripción del producto">
+                </div>
+                <div class="col-md-4">
+                    <h5>Código</h5>
+                    <input required type="text" class="form-control" id="code" placeholder="Código de identificación">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>Precio</h5>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input required type="text" class="form-control" aria-label="Precio" id="price"
+                            placeholder="Precio del producto">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Imagen</h5>
+                    <input required type="text" class="form-control" id="thumbnail"
+                        placeholder="Inserte el URL de la Imagen....">
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <h5>Categoria</h5>
+                        <div class="input-group">
+                            <select class="form-select" id="category">
+                                <option value="electronica">Electronica</option>
+                                <option value="computacion">Computación</option>
+                                <option value="accesorios">Accesorios</option>
+                                <option value="ergonomicos">Ergonomicos</option>
+                                <option value="hogar">Hogar</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-lg" id="submitProduct">Crear</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center mx-auto gap-4" id="productList"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/realTimeProducts.js"></script>
+<script src="/js/home.js"></script>

@@ -1,0 +1,27 @@
+<div class="bg-dark-subtle">
+    <h1 class="text-center p-4 text-white bg-dark shadow-lg mb-0">E-Commerce</h1>
+    <header id="header">
+    </header>
+    <div class="container mt-5">
+        <div class="row justify-content-center mx-auto" id="cart"></div>
+        <div class="row justify-content-center mx-auto">
+            <button class="btn btn-success w-25 p-2 m-3" id="finishPurchase">
+                <h4>Completar compra!</h4>
+                <img style="width: 50px; height: 50px;"
+                    src="https://cdn.shopify.com/s/files/1/0602/7516/3275/files/cash-flow_2.png?v=1664041783"
+                    alt="purchase" />
+            </button>
+            <button class="btn btn-secondary w-25 p-2 m-3" id="clearCart">
+                <h4>Vaciar carrito</h4>
+                <img style="width: 50px; height: 60px;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/User-trash.svg/1200px-User-trash.svg.png"
+                    alt="empty cart" />
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/header.js"></script>
+<script src="/js/cart.js"></script>
